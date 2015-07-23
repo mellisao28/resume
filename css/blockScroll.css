@@ -1,0 +1,62 @@
+/* This css is modified from https://github.com/malihu/page-scroll-to-id.git/examples/style.css */
+
+nav ul, nav ol, nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navigation-menu {
+    position: fixed;
+    top: 2em;
+    right: 3em;
+    left: auto;
+    bottom: auto;
+    z-index: 9;
+    text-shadow: none;
+    font-size: 0.85em;
+}
+
+#navigation-menu ul {
+    overflow: hidden;
+    background: #4a4a4a;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#navigation-menu li {
+    margin: 3px;
+}
+
+#navigation-menu a {
+    display: block;
+    padding: 0.2em 0.6em;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#navigation-menu a:hover, #navigation-menu a.mPS2id-highlight {
+    background: #e6842c;
+    color: #fff;
+}
+
+@media only screen and (min-width: 1140px) {
+	
+    #navigation-menu {
+        font-size: 1em;
+        top: 1.55em;
+    }
+
+    #navigation-menu li {
+        float: left;
+        margin: 3px 5px;
+    }
+
+    #navigation-menu a {
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+    };
+}
