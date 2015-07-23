@@ -47,7 +47,7 @@ var googleMap = '<div id="map"></div>';
 
 $(document).ready(function() {
     $('button').click(function() {
-        var iName = inName(bio.name);
+        var iName = inName(model.bio.name);
         $('#name').html(iName);
     });
 });

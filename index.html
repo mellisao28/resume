@@ -4,33 +4,45 @@
    <title>Resume</title>
    <!-- Load the page styles. -->
    <link href="css/style.css" rel="stylesheet" type="text/css">
+   <link href="css/blockScroll.css" rel="stylesheet" type="text/css">
    <meta name="viewport" content="width=device-width">
    <script src="js/jQuery.js"></script>
    <script src="js/helper.js"></script>
 </head>
 <body>
+   <div>
+      <nav id="navigation-menu">
+         <ul>
+            <li><a href="#header">About</a></li>
+            <li><a href="#workExperience">Work Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#mapDiv">Location</a></li>
+         </ul>
+      </nav>
+   </div>
    <div id="main">
-      <div id="header" class="center-content clearfix">
+      <section id="header" class="center-content clearfix">
          <ul id="topContacts" class="flex-box"></ul>
-      </div>
+      </section>
       <div style="clear: both;"></div>
-      <div id="workExperience" class="gray">
+      <section id="workExperience" class="gray">
          <h2>Work Experience</h2>
-      </div>
-      <div id="projects">
+      </section>
+      <section id="projects">
          <h2>Projects</h2>
-      </div>
-      <div id="education" class="gray">
+      </section>
+      <section id="education" class="gray">
          <h2>Education</h2>
-      </div>
-      <div id="mapDiv">
+      </section>
+      <section id="mapDiv">
          <h2>Where I've Lived and Worked</h2>
-      </div>
-      <div id="letsConnect" class="dark-gray">
+      </section>
+      <section id="letsConnect" class="dark-gray">
          <h2 class="orange center-text">Let's Connect</h2>
          <ul id="footerContacts" class="flex-box">
          </ul>
-      </div>
+      </section>
    </div>
    <script src="js/resumeBuilder.js"></script>
    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script> 
@@ -56,6 +68,47 @@
       if(document.getElementById('map') === null) {
         document.getElementById('mapDiv').style.display = 'none';
       }
+   </script>
+   <!-- This script is forked from https://github.com/malihu/page-scroll-to-id.git/examples/demo-jqaddress.html --> 
+   <!-- Google CDN jQuery with fallback to local -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <!-- jquery.address plugin CDN -->
+   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+   <!-- Page Scroll to id plugin -->
+   <script src="js/jquery.malihu.PageScroll2id.min.js"></script>
+   <script>
+		(function($) {
+			$(window).load(function() {
+
+				/* Page Scroll to id fn call */
+				$("#navigation-menu a,a[href='#top'],a[rel='m_PageScroll2id']").mPageScroll2id({
+					highlightSelector: "#navigation-menu a",
+					clickEvents: false
+				});
+
+				/* jquery.address fn */
+				$.address.change(function(event) {
+					var hash = event.value.split("/")[1] || "#top";
+					$.mPageScroll2id("scrollTo", hash, {
+						clicked: $("a[href='" + hash + "']")
+					});
+				});
+
+				$("#navigation-menu a,a[href='#top'],a[rel='m_PageScroll2id']").click(function(e) {
+					e.preventDefault();
+					var href = $(this).attr("href");
+					if ($.address.value() === "/" + href) {
+						$.address.history(false);
+						$.address.value("#");
+					} else {
+						$.address.history(true);
+					}
+					$.address.value($(this).attr("href"));
+				});
+
+			});
+		})(jQuery);
    </script>
 </body>
 </html>

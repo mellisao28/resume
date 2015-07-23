@@ -1,3 +1,5 @@
+@import url('http://fonts.googleapis.com/css?family=Lobster+Two:700italic,700');
+
 * {
     padding: 0;
     margin: 0;
@@ -13,17 +15,14 @@
 }
 
 h1 {
-    font-size: 40px;
+    font: 48px/1em "Lobster Two",georgia,serif;
     color: #f5a623;
-    line-height: 48px;
     display: inline;
 }
 
 h2 {
-    font-weight: bold;
-    font-size: 24px;
+    font: bold 30px/29px "Lobster Two",georgia,serif;
     color: #999;
-    line-height: 29px;
     padding: 10px;
 }
 
@@ -87,7 +86,7 @@ a {
 }
 
 .orange {
-    background-color: #f5ae23;
+    background-color: #fad691;
 }
 
 .orange-text {
@@ -109,9 +108,8 @@ a {
     background-color: #4a4a4a;
 }
 
-/* TODO: Replace with image later */
 #header {
-    background-color: #484848;
+    background: #484848 url("../images/bg.jpg") repeat-x;
 }
 
 .flex-box {
@@ -142,18 +140,6 @@ img {
     padding: 10px;
 }
 
-/* Bar chart stuff */
-.chart div {
-    font: 10px sans-serif;
-    background-color: #4a4a4a;
-    text-align: right;
-    padding: 3px;
-    margin: 1px;
-    height: 12px;
-    color: white;
-    display: inline-block;
-}
-
 span {
     padding: 5px;
 }
@@ -165,27 +151,27 @@ span {
 @media only screen and (max-width: 1024px) {
     #letsConnect {
         margin-top: 5%;
-    };
+    }
 }
 
 @media only screen and (max-width:900px) {
     .biopic {
         width: 175px;
-    };
+    }
 }
 
 @media only screen and (max-width: 750px) {
     #letsConnect {
         margin-top: 10%;
-    };
+    }
 
     .biopic {
         width: 150px;
-    };
+    }
 
     .welcome-message {
         display: none;
-    };
+    }
 }
 
 #map {
@@ -204,5 +190,5 @@ span {
     #skillsH3,
   .biopic {
         display: block;
-    };
+    }
 }
