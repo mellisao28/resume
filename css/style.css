@@ -1,194 +1,200 @@
 @import url('http://fonts.googleapis.com/css?family=Lobster+Two:700italic,700');
 
 * {
-    padding: 0;
-    margin: 0;
-    font-family: "Roboto", sans-serif;
+	padding: 0;
+	margin: 0;
+	font-family: "Roboto", sans-serif;
 }
 
 .clearfix {
-    overflow: auto;
+	overflow: auto;
 }
 
-.education-entry,.eduonline-entry, .work-entry, .project-entry {
-    padding: 0 5%;
+.education-entry,
+.eduonline-entry,
+.work-entry,
+.project-entry {
+	padding: 0 5%;
 }
 
 h1 {
-    font: 48px/1em "Lobster Two",georgia,serif;
-    color: #f5a623;
-    display: inline;
+	font: 48px/1em "Lobster Two",georgia,serif;
+	color: #f5a623;
+	display: inline;
 }
 
 h2 {
-    font: bold 30px/29px "Lobster Two",georgia,serif;
-    color: #999;
-    padding: 10px;
+	font: bold 30px/29px "Lobster Two",georgia,serif;
+	color: #999;
+	padding: 10px;
 }
 
 h3 {
-    font-style: italic;
-    font-size: 20px;
-    color: #000;
-    line-height: 22px;
+	font-style: italic;
+	font-size: 20px;
+	color: #000;
+	line-height: 22px;
 }
 
 h4 {
-    font-weight: bold;
-    font-size: 14px;
-    color: #4a4a4a;
-    line-height: 17px;
+	font-weight: bold;
+	font-size: 14px;
+	color: #4a4a4a;
+	line-height: 17px;
 }
 
-h2, h3, h4, h5 {
-    padding: 10px 5%;
+h2, 
+h3, 
+h4, 
+h5 {
+	padding: 10px 5%;
 }
 
 .date-text {
-    font-style: italic;
-    font-size: 14px;
-    color: #999;
-    line-height: 16px;
-    float: left;
+	font-style: italic;
+	font-size: 14px;
+	color: #999;
+	line-height: 16px;
+	float: left;
 }
 
 .location-text {
-    font-style: italic;
-    font-size: 14px;
-    color: #999;
-    line-height: 16px;
-    float: right;
+	font-style: italic;
+	font-size: 14px;
+	color: #999;
+	line-height: 16px;
+	float: right;
 }
 
 p {
-    font-size: 14px;
-    color: #333;
-    line-height: 21px;
+	font-size: 14px;
+	color: #333;
+	line-height: 21px;
 }
 
 a {
-    color: #1199c3;
-    text-decoration: none;
-    margin-top: 10px;
-    display: block;
+	color: #1199c3;
+	text-decoration: none;
+	margin-top: 10px;
+	display: block;
 }
 
 .welcome-message {
-    font-style: italic;
-    font-size: 18px;
-    color: #f3f3f3;
-    line-height: 28px;
+	font-style: italic;
+	font-size: 18px;
+	color: #f3f3f3;
+	line-height: 28px;
 }
 
 #skillsH3 {
-    color: #f5ae23;
-    display: none;
+	color: #f5ae23;
+	display: none;
 }
 
 .orange {
-    background-color: #fad691;
+	background-color: #fad691;
 }
 
 .orange-text {
-    color: #f5ae23;
+	color: #f5ae23;
 }
 
 .white-text {
-    font-weight: bold;
-    color: #fff;
+	font-weight: bold;
+	color: #fff;
 }
 
 .gray {
-    background-color: #f3f3f3;
-    padding: 0 0 10px;
-    clear: both;
+	background-color: #f3f3f3;
+	padding: 0 0 10px;
+	clear: both;
 }
 
 .dark-gray {
-    background-color: #4a4a4a;
+	background-color: #4a4a4a;
 }
 
 #header {
-    background: #484848 url("../images/bg.jpg") repeat-x;
+	background: #484848 url(../images/bg.jpg) repeat-x;
 }
 
 .flex-box {
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 10px;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 10px;
 }
 
 .center-content {
-    padding: 2.5% 5%;
+	padding: 2.5% 5%;
 }
 
 ul {
-    list-style-type: none;
+	list-style-type: none;
 }
 
 .biopic {
-    float: left;
-    padding: 10px;
-    width: 200px;
-    display: none;
+	float: left;
+	padding: 10px;
+	width: 200px;
+	display: none;
 }
 
 img {
-    padding: 10px;
+	padding: 10px;
 }
 
 span {
-    padding: 5px;
+	padding: 5px;
 }
 
 #letsConnect {
-    text-align: center;
+	text-align: center;
 }
 
 @media only screen and (max-width: 1024px) {
-    #letsConnect {
-        margin-top: 5%;
-    }
+	#letsConnect {
+		margin-top: 5%;
+	};
 }
 
 @media only screen and (max-width:900px) {
-    .biopic {
-        width: 175px;
-    }
+	.biopic {
+		width: 175px;
+	};
 }
 
 @media only screen and (max-width: 750px) {
-    #letsConnect {
-        margin-top: 10%;
-    }
+	#letsConnect {
+		margin-top: 10%;
+	}
 
-    .biopic {
-        width: 150px;
-    }
+	.biopic {
+		width: 150px;
+	}
 
-    .welcome-message {
-        display: none;
-    }
+	.welcome-message {
+		display: none;
+	};
 }
 
 #map {
-    display: block;
-    height: 100%;
-    margin: 0 5%;
+	display: block;
+	height: 100%;
+	margin: 0 5%;
 }
 
 #mapDiv {
-    height: 400px;
-    width: 100%;
-    padding: 0 0 5%;
+	height: 400px;
+	width: 100%;
+	padding: 0 0 5%;
 }
 
 @media only screen and (min-width: 750px) {
-    #skillsH3,
-  .biopic {
-        display: block;
-    }
+	#skillsH3,
+    .biopic {
+		display: block;
+	};
 }
