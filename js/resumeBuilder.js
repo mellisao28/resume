@@ -5,11 +5,11 @@ var model = {
         "name": "Mellisa Octaviani",
         "role": "B2B IT Analyst and Developer",
         "contacts": {
-            "mobile": "0451496750",
+            "mobile": "408767xxxx",
             "email": "mellisa.octaviani@gmail.com",
             "github": "mellisao28",
             "twitter": "mellisa@twitter.com",
-            "location": "Melbourne, Australia"
+            "location": "Chandler,AZ,US"
         },
         welcomeMessage: "Senior webMethods Analyst and Developer",
         skills: ["webMethods 6.1,6.5,7.1,9.6", "AI (Application Integrator) Translator", "Tibco BusinessWorks", "Oracle JDeveloper", "Java", "C", "Python", "Scala", "Java Script", "JSON", "XML", "EDI/RosettaNet", "CSS"],
